@@ -129,7 +129,7 @@ class App extends Component {
           contacts = {this.state.contacts}
           onDeleteContact = {this.removeContact}
           />}
-          <CreateContact />
+          { this.state.screen ==='create' && <CreateContact />}
       </div>
     )
   }
