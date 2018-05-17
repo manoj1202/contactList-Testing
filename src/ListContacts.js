@@ -79,6 +79,7 @@ class ListContacts extends Component{
         return(
             <div className = "list-contacts">
                 <div className= "list-contacts-top">
+                    <input type="text" value="" placeHolder="Search Contact"></input>
                 </div>
                 <ol   className='contact-list'>
                     {this.props.contacts.map((contact) => (
