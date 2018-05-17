@@ -71,7 +71,7 @@ class ListContacts extends Component{
         contacts : PropTypes.array.isRequired ,
         onDeleteContact : PropTypes.func.isRequired,
     }
-    state ={
+    state = {
         query : ''
     }
 
@@ -79,7 +79,7 @@ class ListContacts extends Component{
         this.setState =(() => ({
             query : query.trim()
         }))    
-    }
+    }   
 
     render(){
         return(
@@ -92,10 +92,10 @@ class ListContacts extends Component{
                         placeholder="Search Contacts"
                         style={{width:'75%', height:'40px', border:'solid', borderColor:'red'}}
                         value={this.state.query}
-                        onChange= {(event) => this.updateQuery(event.target.value)}>
-                    </input>
+                        onChange= {(event) => this.updateQuery(event.target.value)}
+                    />
                 </div>
-                {JSON.stringify(this.state)}
+                
                 <ol   className='contact-list'>
                     {this.props.contacts.map((contact) => (
                         <li key={contact.id} className="contact-list-item">
