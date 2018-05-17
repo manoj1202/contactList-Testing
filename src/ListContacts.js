@@ -77,7 +77,7 @@ class ListContacts extends Component{
 
     updateQuery =(query) => {
         this.setState =(() => ({
-            query : query.trim();
+            query : query.trim()
         }))    
     }
 
@@ -92,7 +92,7 @@ class ListContacts extends Component{
                         placeholder="Search Contacts"
                         style={{width:'75%', height:'40px', border:'solid', borderColor:'red'}}
                         value={this.state.query}
-                        onChange= {(event) => this.updateQuery(e.target.value)}>
+                        onChange= {(event) => this.updateQuery(event.target.value)}>
                     </input>
                 </div>
                 <ol   className='contact-list'>
