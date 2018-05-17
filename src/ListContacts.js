@@ -83,7 +83,7 @@ class ListContacts extends Component{
                         className="search-contacts" 
                         type="text"   
                         placeholder="Search Contacts"
-                        style={{width:'75%'}}>
+                        style={{width:'75%', height:'100px'}}>
                     </input>
                 </div>
                 <ol   className='contact-list'>
