@@ -87,7 +87,6 @@ import ListContacts from './ListContacts'
 
 
 
-const contacts =
 
 class App extends Component {
   state = {
