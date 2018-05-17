@@ -123,8 +123,8 @@ class App extends Component {
     return(
       <div>
       <ListContacts
-       contacts = {{}}
-       onDeleteContact = {this.removeContact}
+       contacts = {this.state.contacts}
+       
       />
       </div>
     )
