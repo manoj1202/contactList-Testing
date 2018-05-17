@@ -84,7 +84,7 @@ class ListContacts extends Component{
     render(){
         return(
             <div className = "list-contacts">
-                {JSON.stringify(this.state)}
+                
                 <div className= "list-contacts-top">
                     <input 
                         className="search-contacts" 
@@ -95,6 +95,7 @@ class ListContacts extends Component{
                         onChange= {(event) => this.updateQuery(event.target.value)}>
                     </input>
                 </div>
+                {JSON.stringify(this.state)}
                 <ol   className='contact-list'>
                     {this.props.contacts.map((contact) => (
                         <li key={contact.id} className="contact-list-item">
