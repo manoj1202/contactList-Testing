@@ -2,7 +2,9 @@ import React,{Component} from 'react'
 
 class CreateContact extends Component{
     render(){
-        return
+        return(
+            <div>Create Contact</div>
+        )
     }
 }
 
