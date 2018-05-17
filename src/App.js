@@ -111,6 +111,15 @@ class App extends Component {
     }
     ]
   }
+  removeContact = (contact) => {
+    this.setState({
+      key : 'tyler'
+    })
+
+    this.setState((currentState) => ({
+
+    }))
+  }
   render(){
     return(
       <div>
