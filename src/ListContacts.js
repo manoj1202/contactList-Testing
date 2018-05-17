@@ -91,7 +91,7 @@ class ListContacts extends Component{
                         placeholder="Search Contacts"
                         style={{width:'75%', height:'40px', border:'solid', borderColor:'red'}}
                         value={this.state.query}
-                        onChange= {}>
+                        onChange= {(event) => this.updateQuery(e.target.value)}>
                     </input>
                 </div>
                 <ol   className='contact-list'>
