@@ -78,6 +78,8 @@ class ListContacts extends Component{
     render(){
         return(
             <div className = "list-contacts">
+                <div className= "list-contacts-top">
+                </div>
                 <ol   className='contact-list'>
                     {this.props.contacts.map((contact) => (
                         <li key={contact.id} className="contact-list-item">
