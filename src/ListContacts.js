@@ -84,7 +84,7 @@ class ListContacts extends Component{
     render(){
         const {query} = this.state
         const {contacts, onDeleteContact} = this.props
-        const showContacts = query === ''? contacts : contacts.filter((c) =>(
+        const showingContacts = query === ''? contacts : contacts.filter((c) =>(
             c.name.toLowerCase().includes(query.toLowerCase())
         ))
         return(
@@ -96,13 +96,13 @@ class ListContacts extends Component{
                         type="text"   
                         placeholder="Search Contacts"
                         style={{width:'75%', height:'40px', border:'solid', borderColor:'red'}}
-                        valu e= {query}
+                        value= {query}
                         onChange = {(event) => this.updateQuery(event.target.value)}
                     />
                 </div>
                 
                 <ol   className='contact-list'>
-                    {showContacts.map((contact) => (
+                    {showingContacts.map((contact) => (
                         <li key={contact.id} className="contact-list-item">
                             <div className="contact-avatar" style={{
                                 backgroundImage : `URL(${contact.avatar})`
