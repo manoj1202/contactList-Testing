@@ -110,7 +110,7 @@ class App extends Component {
       "handle": "tylermcginnis",
       "avatarURL": "http://localhost:5001/tyler.jpg"
     }
-    ];
+    ]
   }
   render(){
     return(
