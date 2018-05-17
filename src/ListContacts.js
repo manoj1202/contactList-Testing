@@ -102,7 +102,7 @@ class ListContacts extends Component{
                 </div>
                 
                 <ol   className='contact-list'>
-                    {contacts.map((contact) => (
+                    {showContacts.map((contact) => (
                         <li key={contact.id} className="contact-list-item">
                             <div className="contact-avatar" style={{
                                 backgroundImage : `URL(${contact.avatar})`
