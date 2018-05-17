@@ -1,33 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-type'
 
 
-//Stateless functional components
-function ListContacts(props){
-    return(
-         <ol   className='contact-list'>
-                {props.contacts.map((contact) => (
-                    <li key={contact.id} className="contact-list-item">
-                        <div className="contact-avatar" style={{
-                            backgroundImage : `URL(${contact.avatar})`
-                                }} >
-                        </div>
-                        <div className="contact-details">
-                            <p> {contact.name}</p>
-                            <p> {contact.handle}</p>
-                        </div>
-                        <button 
-                            className="contact-remove"  
-                            onClick = {() => props.onDeleteContact(contact)}>
-                                 Remove
-                        </button>
-                    </li>
-            
-                     
-                ))}
 
-            </ol>
-    )
-}
 
 // Props by components
 // class ListContacts extends Component{
@@ -58,5 +33,34 @@ function ListContacts(props){
 //     }
 // }
 
+//Stateless functional components
+function ListContacts(props){
+    return(
+         <ol   className='contact-list'>
+                {props.contacts.map((contact) => (
+                    <li key={contact.id} className="contact-list-item">
+                        <div className="contact-avatar" style={{
+                            backgroundImage : `URL(${contact.avatar})`
+                                }} >
+                        </div>
+                        <div className="contact-details">
+                            <p> {contact.name}</p>
+                            <p> {contact.handle}</p>
+                        </div>
+                        <button 
+                            className="contact-remove"  
+                            onClick = {() => props.onDeleteContact(contact)}>
+                                 Remove
+                        </button>
+                    </li>
+            
+                     
+                ))}
+
+            </ol>
+    )
+}
+
+ListContacts.
 
 export default ListContacts
