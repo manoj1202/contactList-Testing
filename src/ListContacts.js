@@ -84,6 +84,9 @@ class ListContacts extends Component{
     render(){
         const {query} = this.state
         const {contacts, onDeleteContact} = this.props
+        const showContacts = query === ''? contacts : contacts.filter((c) =>(
+            c.name.toLowerCase().includes(query.toLowerCase())
+        ))
         return(
             <div className = "list-contacts">
                 
