@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import ListContacts from './ListContacts'
+import CreateContact from './CreateContact'
 // import logo from './logo.svg';
 // import './App.css';
 
