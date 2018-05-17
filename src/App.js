@@ -112,11 +112,10 @@ class App extends Component {
     ]
   }
   removeContact = (contact) => {
-    this.setState({
-      key : 'tyler'
-    })
-
     this.setState((currentState) => ({
+      contacts : currentState.contact.filter((c) => {
+        return c.id !== contatc.id ;
+      })
 
     }))
   }
