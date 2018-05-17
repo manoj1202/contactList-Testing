@@ -110,7 +110,9 @@ class App extends Component {
       "handle": "tylermcginnis",
       "avatarURL": "http://localhost:5001/tyler.jpg"
     }
-    ]
+    ],
+
+    screen :'list'
   }
   removeContact = (contact) => {
     this.setState((currentState) => ({
