@@ -83,7 +83,7 @@ class ListContacts extends Component{
                         className="search-contacts" 
                         type="text"   
                         placeholder="Search Contacts"
-                        width="auto">
+                        width="400px">
                     </input>
                 </div>
                 <ol   className='contact-list'>
