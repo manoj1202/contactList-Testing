@@ -75,6 +75,12 @@ class ListContacts extends Component{
         query : ''
     }
 
+    updateQuery =(query) => {
+        this.setState =(() => ({
+            query : query.trim();
+        }))    
+    }
+
     render(){
         return(
             <div className = "list-contacts">
