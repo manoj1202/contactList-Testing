@@ -125,11 +125,11 @@ class App extends Component {
   render(){
     return(
       <div>
-      <ListContacts
-       contacts = {this.state.contacts}
-       onDeleteContact = {this.removeContact}
-      />
-      <CreateContact />
+         { this.state.screen ==='list' && <ListContacts
+          contacts = {this.state.contacts}
+          onDeleteContact = {this.removeContact}
+          />}
+          <CreateContact />
       </div>
     )
   }
