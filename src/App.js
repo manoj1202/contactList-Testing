@@ -112,7 +112,7 @@ class App extends Component {
     }
     ],
 
-    screen :'list'
+    screen :'create'
   }
   removeContact = (contact) => {
     this.setState((currentState) => ({
