@@ -3,6 +3,7 @@ import ListContacts from './ListContacts'
 import CreateContact from './CreateContact'
 // import logo from './logo.svg';
 // import './App.css';
+import {Route} from 'react-router-dom'
 
  
 
@@ -125,7 +126,8 @@ class App extends Component {
   render(){
     return(
       <div>
-         { this.state.screen ==='list' && <ListContacts
+        <Route path='/' render ={() => (
+          <ListContacts
           contacts = {this.state.contacts}
           onDeleteContact = {this.removeContact}
           onNavigate={() =>{
@@ -133,8 +135,10 @@ class App extends Component {
               screen : 'create'
             }))
           }}
-          />}
-          { this.state.screen ==='create' && <CreateContact />}
+          />)}
+          />
+          <Route path='/Create' component={CreateContact} />
+
       </div>
     )
   }
