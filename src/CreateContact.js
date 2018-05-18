@@ -1,8 +1,9 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
+import SerializeForm from 'form-serialize'
 class CreateContact extends Component{
     handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         
     }
     render(){
