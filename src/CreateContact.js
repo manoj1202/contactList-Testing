@@ -4,6 +4,7 @@ import SerializeForm from 'form-serialize'
 class CreateContact extends Component{
     handleSubmit = (e) => {
         e.preventDefault();
+        const values = SerializeForm(e.target, {hash : true})
         
     }
     render(){
