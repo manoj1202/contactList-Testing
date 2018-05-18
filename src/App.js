@@ -112,9 +112,7 @@ class App extends Component {
       "avatarURL": "http://localhost:5001/tyler.jpg"
     }
     ],
-
-    
-  }
+ }
   removeContact = (contact) => {
     this.setState((currentState) => ({
       contacts : currentState.contacts.filter((c) => {
@@ -122,6 +120,15 @@ class App extends Component {
       })
 
     }))
+  }
+
+  CreateContact = (contact) =>{
+      ContactsAPI.create(contact)
+        .then((contact) => {
+          this.setState((currentState) => ({
+              contacts : currentState   
+          }))
+        })
   }
   render(){
     return(
