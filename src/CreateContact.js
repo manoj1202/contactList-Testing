@@ -10,8 +10,11 @@ class CreateContact extends Component{
                     </Link>
                 </button>
                 <form>
+                    <div>
                     <input type="text" placeholder="Name" />
-                    <input type="text" placeholder="Handle"
+                    <input type="text" placeholder="Handle" />
+                    <button >Add Contact </button>
+                    </div>
                 </form>
             </div>
         )
