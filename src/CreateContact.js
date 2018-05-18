@@ -5,10 +5,14 @@ class CreateContact extends Component{
         return(
             <div>
                 <button style={{margin:'10px'}}>
-                <Link 
-                to = '/'>Back
-                </Link>
+                    <Link 
+                    to = '/'>Back
+                    </Link>
                 </button>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Handle"
+                </form>
             </div>
         )
     }
