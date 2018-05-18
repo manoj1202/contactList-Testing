@@ -5,7 +5,7 @@ class CreateContact extends Component{
     handleSubmit = (e) => {
         e.preventDefault();
         const values = SerializeForm(e.target, {hash : true})
-        
+        console.log('values',values)
     }
     render(){
         return(
