@@ -142,7 +142,7 @@ class App extends Component {
           />)}
           />
           <Route path='/Create' render={({history }) => (
-            <CreactContact 
+            <CreateContact 
               onCreateContact ={(contact) => {
                 this.CreateContact(contact)
                 history.push('/')
