@@ -113,7 +113,7 @@ class App extends Component {
     }
     ],
 
-    screen :'list'
+    
   }
   removeContact = (contact) => {
     this.setState((currentState) => ({
@@ -130,11 +130,7 @@ class App extends Component {
           <ListContacts
           contacts = {this.state.contacts}
           onDeleteContact = {this.removeContact}
-          onNavigate={() =>{
-            this.setState(() => ({
-              screen : 'create'
-            }))
-          }}
+          
           />)}
           />
           <Route path='/Create' component={CreateContact} />
