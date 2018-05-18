@@ -1,6 +1,10 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 class CreateContact extends Component{
+    handleSubmit = (e) => {
+        e.preventDefault()
+        
+    }
     render(){
         return(
             <div>
