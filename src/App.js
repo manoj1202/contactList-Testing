@@ -126,7 +126,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        <Route path='/' render ={() => (
+        <Route exact path='/' render ={() => (
           <ListContacts
           contacts = {this.state.contacts}
           onDeleteContact = {this.removeContact}
