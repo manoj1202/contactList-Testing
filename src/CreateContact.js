@@ -4,7 +4,7 @@ class CreateContact extends Component{
     render(){
         return(
             <div>
-                <button>
+                <button style={{margin:'10px'}}>
                 <Link 
                 to = '/'>Back
                 </Link>
